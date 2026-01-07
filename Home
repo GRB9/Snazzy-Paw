@@ -1,219 +1,105 @@
 Home
-
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
-
     <title>Online Store</title>
-
     <link rel="stylesheet"href="styles.css">
-
 </head>
-
-<body>
-
-   
+<body> 
 
     <header>
-
         <div class="logo">
-
             <img src="logo.png"alt="Your Logo">
-
         </div>
-
         <div class="search-bar">
-
             <input type="text"placeholder="Search...">
-
         </div>
-
         <div class="cart">
-
             <a href="/cart">Your Cart</a>
-
         </div>
+    </header> 
 
-    </header>
-
- 
-
-    <main>
-
-       
+    <main>       
 
         <section class="tagline">
-
             <h1>Tagline describing your e-shop</h1>
-
             <button><a href="/shop">Shop Now</a></button>
-
-        </section>
-
- 
+        </section> 
 
         <section class="featured-products">
-
             <h2>Featured Products</h2>
-
             <div class="product-slider">
-
                 <div class="product-item">
-
                     <img src="product1.jpg"alt="Product 1">
-
                     <p>Product Name</p>
-
                     <p>$300</p>
-
                 </div>
-
                 <div class="product-item">
-
                     <img src="product2.jpg" alt="Product 2">
-
                     <p>Aotearoa Adventure Gear</p>
-
                     <p>$300</p>
-
-                </div>
-
-               
+                </div> 
 
             </div>
-
         </section>
-
  
-
- 
-
- 
-
- 
-
- 
-
         <section class="newsletter">
-
             <h2>Newsletter</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
-
-            <form action="/subscribe"method="POST">
-
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                <form action="/subscribe"method="POST">
                 <input type="email" placeholder="Email Address" required>
-
                 <button type="submit">Subscribe</button>
-
             </form>
-
         </section>
-
- 
 
         <section class="product-list">
-
             <div class="product-item">
-
                 <img src="product3.jpg" alt="Product 3">
-
                 <p>Product Name</p>
-
                 <p>$300</p>
-
                 <div class="stars">
-
                     ★★★★☆
-
                 </div>
-
             </div>
-
             <!-- Repeat for other products -->
-
         </section>
-
- 
 
     </main>
 
- 
-
     <footer>
-
         <div class="footer-info">
-
             <p>About Your Shop</p>
-
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-
         </div>
-
- 
 
         <div class="footer-menu">
-
             <h3>Main Menu</h3>
-
             <ul>
-
                 <li><a href="/home">Home</a></li>
-
                 <li><a href="/about">About</a></li>
-
                 <li><a href="/shop">Shop</a></li>
-
                 <li><a href="/help">Help</a></li>
-
             </ul>
-
         </div>
-
  
-
         <div class="footer-social">
-
             <h3>Find Us On</h3>
-
             <ul>
-
                 <li><a href="#">Facebook</a></li>
-
                 <li><a href="#">Twitter</a></li>
-
                 <li><a href="#">Instagram</a></li>
-
             </ul>
-
         </div>
-
- 
-
- 
 
         <div class="footer-location">
-
             <p>1717 Harrison St, San Francisco, CA 94103, USA</p>
-
         </div>
-
- 
 
         <div class="footer-bottom">
-
             <p>&copy; 2025 Aotearoa Adventure Gear</p>
-
         </div>
-
     </footer>
-
 </body>
-
 </html>
