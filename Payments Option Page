@@ -1,0 +1,262 @@
+Payments Option Page
+
+ <!DOCTYPE html>
+<html lang= "en"     >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content= "width=device-width, initial-scale=1.0">
+<title>Payment Options</title>
+
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      background:#f5f5f5;
+      margin:0;
+      padding:0;
+      color:#555;
+  }
+
+.top-nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#fff;
+    border-bottom:1px solid #ddd;
+}
+
+   .nav-links a {
+        margin:0 10px;
+        color:#777;
+        text-decoration:none;
+}
+
+   .cart-btn {
+        background:#444;
+        padding:8px 14px;
+        color:#fff;
+        border-radius:4px;
+        text-decoration:none;
+ }
+
+ .steps {
+        display:flex;
+        justify-content:center;
+        gap:70px;
+        padding:30px 0;
+        background:#fff;
+        border-bottom:1px solid #ddd;
+  }
+
+ .steps div {
+        font-size:18px;
+        color:#888;
+ }
+
+.steps .active {
+        border-bottom:2px solid #555;
+        padding-bottom:6px;
+        color:#555;
+    }
+
+.container {
+        display:flex;
+        justify-content:space-between;
+        max-width:1100px;
+        padding:40px;
+        margin:auto;
+    }
+ 
+.payment-box {
+        width:60%;
+    }
+
+.payment-box h3 {
+        margin-bottom:20px;
+        color:#666;
+    }
+.method {
+        background:#fff;
+        border:1px solid #ccc;
+        padding:20px;
+        margin-bottom:20px;
+        border-radius:4px;
+    }
+
+
+
+.method input[type="radio"] {
+        margin-right:10px;
+    }
+  .card-grid {
+        display:grid;
+        grid-template-columns:2fr 1fr 1fr;
+        gap:10px;
+        margin:15px 0;
+    }
+.method input[type="text"] {
+        width:100%;
+        padding:10px;
+        border:1px solid #ccc;
+        border-radius:3px;
+    } 
+.btn-row {
+        display:flex;
+        gap:15px;
+        margin-top:20px;
+    }
+.btn-pay {
+        background:#444;
+        padding:12px 25px;
+        color:#fff;
+        border:none;
+        border-radius:3px;
+        cursor:pointer;
+    }
+  .btn-cancel {
+        background:#e0e0e0;
+        padding:12px 25px;
+        border:none;
+        border-radius:3px;
+        cursor:pointer;
+        color:#777;
+    } 
+    .summary {
+        width:30%;
+        background:#fff;
+        padding:20px;
+        border:1px solid #ddd;
+        border-radius:4px;
+        height:fit-content;
+    }
+.summary h3 {
+        color:#666;
+        margin-bottom:20px;
+    } 
+
+.item {
+        display:flex;
+        align-items:center;
+        margin-bottom:20px;
+    }
+
+.item-img {
+        width:60px;
+        height:60px;
+        background:#eaeaea;
+        border:1px solid #ccc;
+        border-radius:4px;
+        margin-right:10px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+.summary-line {
+        display:flex;
+        justify-content:space-between;
+        margin:8px 0;
+    }
+   .total {
+        font-size:20px;
+        font-weight:bold;
+        margin-top:15px;
+    }
+footer {
+        margin-top:40px;
+        padding:20px;
+        text-align:center;
+        color:#777;
+        font-size:14px;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="top-nav">
+    <div class="logo"></div>
+    <div class="nav-links">
+        <a href="#">Home</a> |
+        <a href="#" >About</a> |
+        <a href="#">Shop</a> |
+        <a href="#">Help</a>
+    </div>
+
+    <a class="cart-btn" href="#">Your Cart</a>
+</div>
+<div class="steps">
+    <div>1. Shopping Cart</div>
+    <div>2. Shipping Details</div>
+    <div class="active" >3. Payment Options</div>
+</div>
+<div class="container">
+
+<div class="payment-box">
+        <h3>Payment method</h3>
+
+<div class="method">
+            <label>
+                <input type="radio"name="payment"checked>
+                <strong>Credit Card</strong><br>
+                <small>Lorem ipsum dolor sit amet.</small>
+            </label>
+
+  <div class="card-grid">
+                <input type="text" placeholder= "0000   0000   0000   0000">
+                <input type="text" placeholder= "MM/YY">
+                <input type="text" placeholder= "CVV">
+            </div>
+
+    <input type="text"placeholder="Card Holder Name">
+        </div>
+
+<div class="method">
+            <label>
+                <input type="radio"name="payment">
+                <strong>Paypal</strong> 
+                <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg"
+                     alt="PayPal"style="height:25px;margin-left:10px;">
+                <br><small>Lorem ipsum dolor sit amet.</small>
+            </label>
+        </div>
+
+   <div class="btn-row">
+            <button class="btn-pay">Pay Now</button>
+            <button class="btn-cancel">Cancel</button>
+        </div>
+    </div>
+
+<div class="summary">
+        <h3>Summary</h3>
+
+<div class="item">
+            <div class="item-img"></div>
+            <div>PRODUCT NAME<br>$300</div>
+        </div>
+
+<div class="item">
+            <div class="item-img"></div>
+            <div>PRODUCT NAME<br>$300</div>
+        </div>
+<div class="summary-line">
+            <span>Subtotal</span><span>$600</span>
+        </div>
+        <div class="summary-line">
+            <span>Shipping</span><span>FREE</span>
+        </div>
+        <div class="summary-line">
+            <span>Taxes</span><span>$13</span>
+        </div>
+
+     <div class="summary-line total">
+            <span>Total</span><span>$613</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © Your Company Name
+</footer>
+
+</body>
+</html>
