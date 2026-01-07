@@ -1,0 +1,325 @@
+Shipping Details Page
+
+ 
+
+<!DOCTYPE html>
+
+<html lang= "en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+    <title>Shipping Details</title>
+
+    <link rel="stylesheet" href="styles.css" >
+
+</head>
+
+ 
+
+<body>
+
+ 
+
+<header class="header">
+
+    <div class="logo">
+
+        <img src="logo.png"alt="Logo">
+
+    </div>
+
+ 
+
+<nav class="main-nav">
+
+        <a href="#">Home</a> |
+
+        <a href= "#" >About</a> |
+
+        <a href="#">Shop</a> |
+
+        <a href="#">Help</a>
+
+    </nav>
+
+ 
+
+    <div class="cart-btn">
+
+        <a href="#">Your Cart</a>
+
+    </div>
+
+</header>
+
+ 
+
+<section class="checkout-steps">
+
+    <div class="step" >1. Shopping Cart</div>
+
+    <div class="step active">2. Shipping Details</div>
+
+    <div class="step">3. Payment Options</div>
+
+</section>
+
+ 
+
+<hr>
+
+ 
+
+<main class="shipping-container">
+
+ 
+
+<section class="shipping-details">
+
+        <h2>Shipping Details</h2>
+
+ 
+
+        <form>
+
+ 
+
+<div class="row">
+
+                <input type="text"placeholder="First Name">
+
+                <input type=    "text"    placeholder="Last Name">
+
+            </div>
+
+ 
+
+  <div class="row">
+
+                <input type="text"placeholder="Address" >
+
+            </div>
+
+ 
+
+<div class="row">
+
+                <input type="text"placeholder="Address 2">
+
+            </div>
+
+ 
+
+    <div class="row">
+
+                <select>
+
+                    <option>Country</option>
+
+                </select>
+
+ 
+
+                <input type="text"placeholder="City">
+
+            </div>
+
+ 
+
+<div class="row">
+
+                <input type="text"placeholder="Zip/Postal Code">
+
+                <input type="text"placeholder="Phone Number">
+
+            </div>
+
+ 
+
+<div class="shipping-options">
+
+ 
+
+<label class="ship-option">
+
+                    <input type="radio"name="shipping"checked>
+
+                    <div class="option-box">
+
+                        <strong>Free Shipping</strong><br>
+
+                        <small>Between 2 - 5 working days</small>
+
+                    </div>
+
+                </label>
+
+ 
+
+<label class="ship-option">
+
+                    <input type="radio"name="shipping">
+
+                    <div class="option-box">
+
+                        <strong>Next Day Delivery - $20</strong><br>
+
+                        <small>24 hours from checkout</small>
+
+                    </div>
+
+                </label>
+
+ 
+
+</div>
+
+ 
+
+<div class="buttons">
+
+                <button class="next-btn">Next</button>
+
+                <button class="cancel-btn">Cancel</button>
+
+            </div>
+
+ 
+
+        </form>
+
+    </section>
+
+ 
+
+<aside class="summary">
+
+ 
+
+        <h2>Summary</h2>
+
+ 
+
+<div class="summary-item">
+
+            <img src="product1.jpg"alt="Product">
+
+            <div>
+
+                <p>PRODUCT NAME</p>
+
+                <p>$300</p>
+
+            </div>
+
+        </div>
+
+ 
+
+<div class="summary-item">
+
+            <img src="product2.jpg"alt="Product">
+
+            <div>
+
+                <p>PRODUCT NAME</p>
+
+                <p>$300</p>
+
+            </div>
+
+        </div>
+
+ 
+
+  <label class="voucher-label">HAVE A VOUCHER?</label>
+
+        <select class="voucher-select">
+
+            <option>Select</option>
+
+        </select>
+
+ 
+
+  <div class="summary-row">
+
+            <span>SUBTOTAL</span>
+
+            <span>$600</span>
+
+        </div>
+
+ 
+
+<div class="summary-row">
+
+            <span>SHIPPING</span>
+
+            <span>FREE</span>
+
+        </div>
+
+ 
+
+<div class="summary-row">
+
+            <span>TAXES</span>
+
+            <span>$13</span>
+
+        </div>
+
+ 
+
+        <hr>
+
+ 
+
+<div class="summary-total">
+
+            <span>TOTAL</span>
+
+            <span class="total-price">$613</span>
+
+        </div>
+
+ 
+
+    </aside>
+
+ 
+
+</main>
+
+ 
+
+<footer class="footer">
+
+    <nav class="footer-links">
+
+        <a href="#">Home</a> |
+
+        <a href="#">About</a> |
+
+        <a href="#">Shop</a> |
+
+        <a href="#" >Help</a>
+
+    </nav>
+
+ 
+
+    <p class="copyright">© Your Company Name</p>
+
+</footer>
+
+ 
+
+</body>
+
+</html>
